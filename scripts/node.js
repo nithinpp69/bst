@@ -34,11 +34,9 @@ class Node {
     fill(255);
     noStroke();
     textAlign(CENTER);
+    textSize(16);
     text(this.value, this.x, this.y);
-    // stroke(255);
-    // noFill();
-    // ellipse(parent.x, parent.y, 50, 50);
-    // line(parent.x, parent.y, this.x, this.y);
+    
     if (this.right != null)
       this.right.visit(this);
   }
