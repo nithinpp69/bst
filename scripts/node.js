@@ -29,13 +29,13 @@ class Node {
 
   search(val) {
     if (this.value == val)
-      console.log(this);
+      return this;
     else if (val <= this.value && this.left != null)
-      this.left.search(val);
+      return this.left.search(val);
     else if (val > this.value && this.right != null)
-      this.right.search(val);
+      return this.right.search(val);
     else
-      console.log(`${val} Not Found`);
+      return `${val} Not Found`;
   }
 
 }

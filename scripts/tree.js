@@ -17,7 +17,7 @@ class Tree {
   }
 
   search(value) {
-    this.root.search(value);
+    return this.root.search(value);
   }
-  
+
 }
